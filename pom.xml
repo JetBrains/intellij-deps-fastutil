@@ -15,6 +15,7 @@
             <phase>generate-resources</phase>
             <configuration>
               <target>
+                <mkdir dir="out"/>
                 <get src="https://repo1.maven.org/maven2/it/unimi/dsi/fastutil/8.3.1/fastutil-8.3.1.jar" dest="out/fastutil.jar"/>
                 <exec executable="./find-deps.sh" failonerror="true">
                   <arg value="out/fastutil.jar"/>
