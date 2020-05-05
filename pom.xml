@@ -1,0 +1,53 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.develar</groupId>
+  <artifactId>fastutil-min-builder</artifactId>
+  <version>8.3.1-1</version>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <id>build</id>
+            <phase>generate-resources</phase>
+            <configuration>
+              <target>
+                <get src="https://repo1.maven.org/maven2/it/unimi/dsi/fastutil/8.3.1/fastutil-8.3.1.jar" dest="out/fastutil.jar"/>
+                <exec executable="./find-deps.sh" failonerror="true">
+                  <arg value="out/fastutil.jar"/>
+                  <arg value="dependencies.txt"/>
+                </exec>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>3.0.0-M1</version>
+        <executions>
+          <execution>
+            <id>deploy-file</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>deploy-file</goal>
+            </goals>
+            <configuration>
+              <file>out/fastutil-min.jar</file>
+              <groupId>com.github.develar</groupId>
+              <artifactId>fastutil-min</artifactId>
+              <version>8.3.1-1</version>
+              <packaging>jar</packaging>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
