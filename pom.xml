@@ -35,13 +35,13 @@
         <executions>
           <execution>
             <id>deploy-file</id>
-            <phase>deploy</phase>
+            <phase>install</phase>
             <goals>
               <goal>deploy-file</goal>
             </goals>
             <configuration>
               <file>out/fastutil-min.jar</file>
-              <groupId>com.github.develar</groupId>
+              <groupId>com.github.fastutil-min-builder</groupId>
               <artifactId>fastutil-min</artifactId>
               <version>8.3.1-1</version>
               <packaging>jar</packaging>
