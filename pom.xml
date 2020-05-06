@@ -8,7 +8,7 @@
       <groupId>it.unimi.dsi</groupId>
       <artifactId>fastutil</artifactId>
       <version>8.3.1</version>
-      <classifier>source</classifier>
+      <classifier>sources</classifier>
     </dependency>
   </dependencies>
   <build>
