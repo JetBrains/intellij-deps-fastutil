@@ -47,9 +47,11 @@ echo "Unpacking jar from $jar_path"
 rm -rf out/tmp
 mkdir -p out/tmp
 
-# shellcheck disable=SC2046
-unzip -q "$jar_path" $(printf '%s\n' "$depList") -d out/tmp
+rm -rf target/classes
 
-cd "out/tmp"
-echo "Creating minimized jar at $dest_path"
-zip -9 -q -r "$dest_path" "it" "META-INF" .
+# shellcheck disable=SC2046
+unzip -q "$jar_path" $(printf '%s\n' "$depList") -d target/classes
+
+#cd "out/tmp"
+#echo "Creating minimized jar at $dest_path"
+#zip -9 -q -r "$dest_path" "it" "META-INF" .
