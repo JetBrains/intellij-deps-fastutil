@@ -34,7 +34,8 @@ fi
 class_list=${class_paths//.class/}
 class_list=${class_list//\//.}
 
-transitive_dependencies=$(jdeps -recursive -regex "$fastutil_regex" -verbose:class -cp "$jar_path" "${class_list}" | awk '/      -> / { gsub(/\./, "/", $2) ".class"; print $2 ".class" }')
+# shellcheck disable=SC2086
+transitive_dependencies=$(jdeps -recursive -regex "$fastutil_regex" -verbose:class -cp "$jar_path" ${class_list} | awk '/      -> / { gsub(/\./, "/", $2) ".class"; print $2 ".class" }')
 
 # shellcheck disable=SC2086
 depList=$(printf '%s\n' $class_paths $transitive_dependencies | sort | uniq)
