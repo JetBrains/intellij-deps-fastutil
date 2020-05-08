@@ -10,3 +10,4 @@ it/unimi/dsi/fastutil/ints/IntLinkedOpenHashSet.class
 it/unimi/dsi/fastutil/ints/Int2IntRBTreeMap.class
 it/unimi/dsi/fastutil/ints/Int2ObjectRBTreeMap.class
 it/unimi/dsi/fastutil/ints/IntArrayList.class
+it/unimi/dsi/fastutil/ints/Int2BooleanOpenHashMap.class
