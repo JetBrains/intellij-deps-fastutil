@@ -1,6 +1,8 @@
 it/unimi/dsi/fastutil/objects/Object2IntOpenHashMap.class
 it/unimi/dsi/fastutil/objects/Object2ObjectOpenHashMap.class
+it/unimi/dsi/fastutil/objects/Reference2ObjectOpenHashMap.class
 it/unimi/dsi/fastutil/objects/ObjectOpenHashSet.class
+it/unimi/dsi/fastutil/objects/ReferenceOpenHashSet.class
 it/unimi/dsi/fastutil/ints/Int2IntOpenHashMap.class
 it/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap.class
 it/unimi/dsi/fastutil/ints/Int2ObjectLinkedOpenHashMap.class
