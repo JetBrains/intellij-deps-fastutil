@@ -8,4 +8,5 @@ it/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap.class
 it/unimi/dsi/fastutil/ints/Int2ObjectLinkedOpenHashMap.class
 it/unimi/dsi/fastutil/ints/IntLinkedOpenHashSet.class
 it/unimi/dsi/fastutil/ints/Int2IntRBTreeMap.class
+it/unimi/dsi/fastutil/ints/Int2ObjectRBTreeMap.class
 it/unimi/dsi/fastutil/ints/IntArrayList.class
