@@ -15,3 +15,4 @@ it/unimi/dsi/fastutil/ints/IntArrayList.class
 it/unimi/dsi/fastutil/ints/Int2BooleanOpenHashMap.class
 it/unimi/dsi/fastutil/ints/Int2LongOpenHashMap.class
 it/unimi/dsi/fastutil/ints/IntOpenHashSet.class
+it/unimi/dsi/fastutil/doubles/Double2ObjectOpenHashMap.class
