@@ -7,6 +7,7 @@ it/unimi/dsi/fastutil/objects/ObjectOpenCustomHashSet.class
 it/unimi/dsi/fastutil/objects/Object2ObjectOpenCustomHashMap.class
 it/unimi/dsi/fastutil/objects/Object2IntOpenCustomHashMap.class
 it/unimi/dsi/fastutil/objects/Object2LongOpenHashMap.class
+it/unimi/dsi/fastutil/objects/Object2LongOpenCustomHashMap.class
 it/unimi/dsi/fastutil/ints/Int2IntOpenHashMap.class
 it/unimi/dsi/fastutil/ints/Int2ObjectOpenHashMap.class
 it/unimi/dsi/fastutil/ints/Int2ObjectLinkedOpenHashMap.class
