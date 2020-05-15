@@ -22,3 +22,4 @@ it/unimi/dsi/fastutil/ints/IntOpenHashSet.class
 it/unimi/dsi/fastutil/ints/Int2DoubleOpenHashMap.class
 it/unimi/dsi/fastutil/longs/Long2ObjectOpenHashMap.class
 it/unimi/dsi/fastutil/doubles/Double2ObjectOpenHashMap.class
+it/unimi/dsi/fastutil/bytes/ByteArrayList.class
