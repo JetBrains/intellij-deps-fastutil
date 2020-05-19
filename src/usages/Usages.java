@@ -5,10 +5,7 @@ import it.unimi.dsi.fastutil.bytes.ByteArrayList;
 import it.unimi.dsi.fastutil.doubles.Double2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.doubles.DoubleArrayList;
 import it.unimi.dsi.fastutil.ints.*;
-import it.unimi.dsi.fastutil.longs.Long2LongOpenHashMap;
-import it.unimi.dsi.fastutil.longs.Long2ObjectOpenHashMap;
-import it.unimi.dsi.fastutil.longs.LongArrayList;
-import it.unimi.dsi.fastutil.longs.LongOpenHashSet;
+import it.unimi.dsi.fastutil.longs.*;
 import it.unimi.dsi.fastutil.objects.*;
 
 public final class Usages {
@@ -25,23 +22,29 @@ public final class Usages {
       }
     };
 
-    new Object2IntOpenHashMap<String>();
     new Object2ObjectOpenHashMap<String, String>();
+    new Object2IntOpenHashMap<String>();
+    new Object2LongOpenHashMap<String>();
+
     new Reference2ObjectOpenHashMap<String, String>();
+    new Reference2IntOpenHashMap<String>();
 
     new ObjectOpenHashSet<String>();
     new ReferenceOpenHashSet<String>();
-    new LongOpenHashSet();
-    new IntLinkedOpenHashSet();
     new IntOpenHashSet();
+    new LongOpenHashSet();
+
+    new ObjectLinkedOpenHashSet<String>();
+    new LongLinkedOpenHashSet();
+    new IntLinkedOpenHashSet();
+
+    new ObjectLinkedOpenCustomHashSet<>(strategy);
+    new ObjectOpenCustomHashSet<>(strategy);
 
     new Object2ObjectOpenCustomHashMap<>(strategy);
-    new ObjectOpenCustomHashSet<>(strategy);
     new Object2IntOpenCustomHashMap<>(strategy);
     new Object2LongOpenCustomHashMap<>(strategy);
 
-    new Object2LongOpenHashMap<String>();
-    new Reference2IntOpenHashMap<String>();
     new Object2ObjectLinkedOpenHashMap<String, String>();
     new Int2IntOpenHashMap();
     new Int2ObjectOpenHashMap<String>();
