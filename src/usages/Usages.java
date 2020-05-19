@@ -25,9 +25,21 @@ public final class Usages {
     new Object2ObjectOpenHashMap<String, String>();
     new Object2IntOpenHashMap<String>();
     new Object2LongOpenHashMap<String>();
+    new Object2ObjectArrayMap<String, String>();
 
     new Reference2ObjectOpenHashMap<String, String>();
     new Reference2IntOpenHashMap<String>();
+    new Object2FloatOpenHashMap();
+    new Int2IntOpenHashMap();
+    new Int2ObjectOpenHashMap<String>();
+    new Int2IntRBTreeMap();
+    new Int2ObjectRBTreeMap<String>();
+    new Int2BooleanOpenHashMap();
+    new Int2LongOpenHashMap();
+    new Int2DoubleOpenHashMap();
+    new Long2ObjectOpenHashMap<String>();
+    new Long2LongOpenHashMap();
+    new Double2ObjectOpenHashMap<String>();
 
     new ObjectOpenHashSet<String>();
     new ReferenceOpenHashSet<String>();
@@ -50,17 +62,6 @@ public final class Usages {
     new Int2ObjectLinkedOpenHashMap<String>();
 
     new Object2ObjectLinkedOpenCustomHashMap<String, String>(strategy);
-
-    new Int2IntOpenHashMap();
-    new Int2ObjectOpenHashMap<String>();
-    new Int2IntRBTreeMap();
-    new Int2ObjectRBTreeMap<String>();
-    new Int2BooleanOpenHashMap();
-    new Int2LongOpenHashMap();
-    new Int2DoubleOpenHashMap();
-    new Long2ObjectOpenHashMap<String>();
-    new Long2LongOpenHashMap();
-    new Double2ObjectOpenHashMap<String>();
 
     new IntArrayList();
     new LongArrayList();
