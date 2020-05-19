@@ -1,39 +1,52 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.develar</groupId>
-  <artifactId>fastutil-min-builder</artifactId>
+  <artifactId>intellij-deps-fastutil</artifactId>
   <version>8.3.1-4</version>
   <dependencies>
     <dependency>
       <groupId>it.unimi.dsi</groupId>
       <artifactId>fastutil</artifactId>
       <version>8.3.1</version>
-      <classifier>sources</classifier>
     </dependency>
   </dependencies>
   <build>
+    <sourceDirectory>src</sourceDirectory>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <version>3.0.0</version>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <compilerVersion>8</compilerVersion>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.2.3</version>
         <executions>
           <execution>
-            <id>build</id>
-            <phase>compile</phase>
-            <configuration>
-              <target>
-                <mkdir dir="out"/>
-                <get src="https://repo1.maven.org/maven2/it/unimi/dsi/fastutil/8.3.1/fastutil-8.3.1.jar" dest="out/fastutil.jar"/>
-                <exec executable="./find-deps.sh" failonerror="true">
-                  <arg value="out/fastutil.jar"/>
-                  <arg value="dependencies.txt"/>
-                </exec>
-              </target>
-            </configuration>
+            <phase>package</phase>
             <goals>
-              <goal>run</goal>
+              <goal>shade</goal>
             </goals>
+            <configuration>
+              <minimizeJar>true</minimizeJar>
+              <createSourcesJar>true</createSourcesJar>
+              <createDependencyReducedPom>false</createDependencyReducedPom>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>usages/*</exclude>
+                    <exclude>META-INF/*</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+            </configuration>
           </execution>
         </executions>
       </plugin>
