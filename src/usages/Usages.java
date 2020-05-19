@@ -46,9 +46,13 @@ public final class Usages {
     new Object2LongOpenCustomHashMap<>(strategy);
 
     new Object2ObjectLinkedOpenHashMap<String, String>();
+    new Reference2ObjectLinkedOpenHashMap<String, String>();
+    new Int2ObjectLinkedOpenHashMap<String>();
+
+    new Object2ObjectLinkedOpenCustomHashMap<String, String>(strategy);
+
     new Int2IntOpenHashMap();
     new Int2ObjectOpenHashMap<String>();
-    new Int2ObjectLinkedOpenHashMap<String>();
     new Int2IntRBTreeMap();
     new Int2ObjectRBTreeMap<String>();
     new Int2BooleanOpenHashMap();
