@@ -1,8 +1,8 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.github.jetbrains</groupId>
+  <groupId>org.jetbrains.intellij.deps.fastutil</groupId>
   <artifactId>intellij-deps-fastutil</artifactId>
-  <version>8.3.1-4</version>
+  <version>8.3.1</version>
   <dependencies>
     <dependency>
       <groupId>it.unimi.dsi</groupId>
@@ -52,4 +52,10 @@
       </plugin>
     </plugins>
   </build>
+  <distributionManagement>
+    <repository>
+      <id>bintray-jetbrains-intellij-third-party-dependencies</id>
+      <url>https://api.bintray.com/maven/jetbrains/intellij-third-party-dependencies/fastutil/;publish=1</url>
+    </repository>
+  </distributionManagement>
 </project>
