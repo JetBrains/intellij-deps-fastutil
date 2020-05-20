@@ -29,7 +29,8 @@ public final class Usages {
 
     new Reference2ObjectOpenHashMap<String, String>();
     new Reference2IntOpenHashMap<String>();
-    new Object2FloatOpenHashMap();
+    new Object2FloatOpenHashMap<>();
+    new Object2BooleanOpenHashMap<>();
     new Int2IntOpenHashMap();
     new Int2ObjectOpenHashMap<String>();
     new Int2IntRBTreeMap();
@@ -56,6 +57,7 @@ public final class Usages {
     new Object2ObjectOpenCustomHashMap<>(strategy);
     new Object2IntOpenCustomHashMap<>(strategy);
     new Object2LongOpenCustomHashMap<>(strategy);
+    new Object2BooleanOpenCustomHashMap<>(strategy);
 
     new Object2ObjectLinkedOpenHashMap<String, String>();
     new Reference2ObjectLinkedOpenHashMap<String, String>();
