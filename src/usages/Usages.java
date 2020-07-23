@@ -47,6 +47,7 @@ public final class Usages {
     new ReferenceOpenHashSet<String>();
     new IntOpenHashSet();
     new LongOpenHashSet();
+    new Long2IntOpenHashMap();
 
     new ObjectLinkedOpenHashSet<String>();
     new LongLinkedOpenHashSet();
