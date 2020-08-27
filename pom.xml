@@ -2,12 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jetbrains.intellij.deps.fastutil</groupId>
   <artifactId>intellij-deps-fastutil</artifactId>
-  <version>8.3.1</version>
+  <version>8.4.1</version>
   <dependencies>
     <dependency>
       <groupId>it.unimi.dsi</groupId>
       <artifactId>fastutil</artifactId>
-      <version>8.3.1</version>
+      <version>8.4.1</version>
     </dependency>
   </dependencies>
   <build>
@@ -26,7 +26,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.3</version>
+        <version>3.2.4</version>
         <executions>
           <execution>
             <phase>package</phase>
