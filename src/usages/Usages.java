@@ -26,6 +26,7 @@ public final class Usages {
     new Object2IntOpenHashMap<String>();
     new Object2ShortOpenHashMap<String>();
     new Object2LongOpenHashMap<String>();
+    new Object2DoubleOpenHashMap<String>();
     new Object2ObjectArrayMap<String, String>();
 
     new Reference2ObjectOpenHashMap<String, String>();
