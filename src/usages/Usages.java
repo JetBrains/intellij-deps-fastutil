@@ -73,5 +73,9 @@ public final class Usages {
     new LongArrayList();
     new DoubleArrayList();
     new ByteArrayList();
+
+    //noinspection StatementWithEmptyBody
+    if (IntLists.EMPTY_LIST != null) {
+    };
   }
 }
