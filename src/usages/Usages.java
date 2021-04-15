@@ -48,6 +48,7 @@ public final class Usages {
     new ReferenceOpenHashSet<String>();
     new IntOpenHashSet();
     new IntRBTreeSet();
+    new IntAVLTreeSet();
     new LongOpenHashSet();
     new Long2IntOpenHashMap();
 
@@ -76,6 +77,6 @@ public final class Usages {
 
     //noinspection StatementWithEmptyBody
     if (IntLists.EMPTY_LIST != null) {
-    };
+    }
   }
 }
