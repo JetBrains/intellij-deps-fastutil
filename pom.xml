@@ -59,8 +59,8 @@
   </build>
   <distributionManagement>
     <repository>
-      <id>bintray-jetbrains-intellij-third-party-dependencies</id>
-      <url>https://api.bintray.com/maven/jetbrains/intellij-third-party-dependencies/fastutil/;publish=1</url>
+      <id>space-intellij-dependencies</id>
+      <url>https://packages.jetbrains.team/maven/p/ij/intellij-dependencies</url>
     </repository>
   </distributionManagement>
 </project>
