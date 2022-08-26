@@ -41,6 +41,7 @@ public final class Usages {
     new Int2LongOpenHashMap();
     new Int2DoubleOpenHashMap();
     new Int2FloatOpenHashMap();
+    new Int2ByteOpenHashMap();
     new Long2ObjectOpenHashMap<String>();
     new Long2LongOpenHashMap();
     new Double2ObjectOpenHashMap<String>();
