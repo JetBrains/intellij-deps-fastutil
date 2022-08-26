@@ -33,6 +33,7 @@ public final class Usages {
     new Reference2IntOpenHashMap<String>();
     new Object2FloatOpenHashMap<>();
     new Object2BooleanOpenHashMap<>();
+    new Object2ByteOpenHashMap<>();
     new Int2IntOpenHashMap();
     new Int2ObjectOpenHashMap<String>();
     new Int2IntRBTreeMap();
