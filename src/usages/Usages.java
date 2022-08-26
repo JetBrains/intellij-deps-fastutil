@@ -70,6 +70,7 @@ public final class Usages {
 
     new Object2ObjectLinkedOpenHashMap<String, String>();
     new Reference2ObjectLinkedOpenHashMap<String, String>();
+    new Reference2LongOpenHashMap<String>();
     new Int2ObjectLinkedOpenHashMap<String>();
 
     new Object2ObjectLinkedOpenCustomHashMap<String, String>(strategy);
