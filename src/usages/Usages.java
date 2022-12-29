@@ -37,6 +37,7 @@ public final class Usages {
     new Int2IntOpenHashMap();
     new Int2ObjectOpenHashMap<String>();
     new Int2IntRBTreeMap();
+    new Int2LongRBTreeMap();
     new Int2ObjectRBTreeMap<String>();
     new Int2BooleanOpenHashMap();
     new Int2LongOpenHashMap();
